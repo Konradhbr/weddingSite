@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wedding-site</title>
     <link href="src/styles/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   
+
 </head>
 <body>
+    <!-- header begin-->
+    <button class="hamburger">
+        <span class="hamburger__box">
+          <span class="hamburger__inner"></span>
+        </span>
+      </button>
     <header>
         <div class="container-fluid">
             <div class="row">
@@ -28,5 +37,161 @@
             </div>
         </div>
     </header>
+    <!-- header end-->
+
+    <!-- hero-image section begin -->
+    <section class="hero-image" data-setbg="img/hero.png">
+        <div class="container-fluid">
+            <div class="hero-image-text">
+                <img src="src/assets/hi.png" alt="">
+                <h5>Witaj</h5>
+                <h2>Zaplanuj perfekcyjne wesele</h2>
+                <p>Uczynimy ten dzień waszą najwspanialszą chwilą w życiu</p>
+            </div>
+        </div>
+    </section>
+    <!-- hero-image section end -->
+
+    <!-- services section begin -->
+    <section class="services">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="service-title">
+                        <h2>Nasze usługi</h2>
+                        <img src="src\assets\ti.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-item">
+                        <img src="src\assets\car.png" alt="">
+                        <h4>Auto do ślubu</h4>
+                        <p>Oferujemy przejazdy ślubne luksusową limuzyną.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-item">
+                        <img src="src\assets\florist.png" alt="">
+                        <h4>Florystyka ślubna</h4>
+                        <p>Ubieramy i stroimy sale weselne oraz kościoły.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="service-item">
+                        <img src="src\assets\love.png" alt="">
+                        <h4>Napis LOVE</h4>
+                        <p>Przepiękny napis LOVE , który napewno urozmaici wasze wesele.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="service-item">
+                        <img src="src\assets\wedding wall.png" alt="">
+                        <h4>Ścianka kwiatowa</h4>
+                        <p>Stanowi przepiękne tło za Parą Młodą , obowiązkowy element wystroju.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section end -->
+
+    <!-- request section begin -->
+    <section class="request">
+        <div class="request-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="request-form">
+                        <div class="request-title">
+                            <p>Bądźmy w kontakcie</p>
+                            <h2>Napisz do nas</h2>
+                            <p>Jeśli masz jakieś pytania lub chcesz zarezerwować termin uzupełnij formularz kontaktowy.</p>
+                        </div>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Imię i nazwisko">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Email">
+                                </div>
+                                <div class="col">
+                                    <select>
+                                        <option value="Auto do ślubu"></option>
+                                        <option value="Florystyka ślubna"></option>
+                                        <option value="Ścianka kwiatowa"></option>
+                                        <option value="Napis LOVE"></option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <textarea type="text" placeholder="Wiadomość"></textarea>
+                                    <button type="submit" class="site-btn">Wyślij</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- request section end -->
+
+    <!-- logo slider section begin  -->
+    <section class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">\
+                    <div class="slider-item">
+                        <a href="#"><img src="src\assets\NapisLove-logo.png" alt=""></a>
+                        <a href="#"><img src="src\assets\AutoDoSlubu-logo.png" alt=""></a>
+                        <a href="#"><img src="src\assets\Florystyka-logo.png" alt=""></a>
+                        <a href="#"><img src="src\assets\SciankaKwiatowa-logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- logo slider section end  -->
+
+    <!-- footer section begin -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-logo">
+                        <a href="#"><img src="src\assets\logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footer-item">
+                        <h5>Godziny otwarcia</h5>
+                        <ul>
+                            <li>Poniedziałek - Niedziela: 8:00 - 22:00pm</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footer-item">
+                        <h5>Telefon & Email</h5>
+                        <ul>
+                            <li>weddinghbr@gmail.com</li>
+                            <li>697 177 488</li>
+                            <li>601 602 035</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col">
+                        <p>All rights reserved | Konrad Haber</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
 </body>
 </html>

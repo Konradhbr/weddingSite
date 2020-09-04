@@ -4,35 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding-site</title>
-    <link href="src/styles/index.css" rel="stylesheet">
+    <link href="src/styles/sass/style.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-   
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    
+
+    
 </head>
 <body>
     <!-- header begin-->
-    <button class="hamburger">
-        <span class="hamburger__box">
-          <span class="hamburger__inner"></span>
-        </span>
-      </button>
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="menu col-12 col-sm-12">
                     <div class="logo">
                         <a href="#"><img src="src\assets\logo.png" alt="logo"></a>
                     </div>
+                    <div class="hamburger-menu">
+                        <button class="hamburger">
+                            <span class="hamburger__box">
+                            <span class="hamburger__inner"></span>
+                            </span>
+                        </button>
+                    </div>    
                 </div>
-                <div class="col">
-                    <nav class="mobile-menu">
-                        <ul>
-                            <li><a href="#">Strona startowa</a></li>
-                            <li><a href="#">Usługi</a></li>
-                            <li><a href="#">Kontakt</a></li>
+                <div class="col-12 col-sm-12">
+                    <div class="navbar mobile-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#">Strona startowa</a></li>
+                            <li class="nav-item"><a href="#">Usługi</a></li>
+                            <li class="nav-item"><a href="#">Kontakt</a></li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -193,5 +204,19 @@
         </div>
     </footer>
     <!-- footer section end -->
+
+
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+    
+        const handleClick = () => {
+        hamburger.classList.toggle('hamburger--active');
+        mobileMenu.classList.toggle('mobile-menu--active');
+        }
+    
+        hamburger.addEventListener('click', handleClick);
+    </script>
 </body>
 </html>

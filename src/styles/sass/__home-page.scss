@@ -1,17 +1,18 @@
+// ----- header ------
+
 header {
     .row {
         height: 90px;
     }
 }
 
-
-
 .menu {
     background-color: white;
     display: flex;
     height: -webkit-fill-available;
 }
-            
+ 
+// -----hamburger menu------
 .hamburger-menu {
     width: 100%;
     display: flex;
@@ -81,6 +82,8 @@ header {
         transform: translateY(-10px) rotate(-45deg) ;
     }
 }
+
+// ---------rolling mobile menu----------
 
 .mobile-menu {
     background-color: black;

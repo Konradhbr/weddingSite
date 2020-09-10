@@ -1,0 +1,46 @@
+footer {
+    background-color: #3b3e33;
+    color: white;
+    margin-top: 53px;
+
+
+    .container-fluid {
+        height: inherit;
+    }
+
+   img {
+    width: 156px;
+   }
+
+   .col-12 {
+       margin-top: 20px;
+   }
+}
+
+#info {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-item {
+
+    h5 {
+    color: white;
+    }
+
+    ul {
+        margin-top: 25px;
+    }
+}
+
+.footer-copyright {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: white;
+
+    }
+}
+    

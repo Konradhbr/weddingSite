@@ -70,6 +70,7 @@ header .row {
   display: -ms-flexbox;
   display: flex;
   height: -webkit-fill-available;
+  z-index: 2;
 }
 
 .hamburger-menu {
@@ -155,14 +156,13 @@ header .row {
 
 .mobile-menu {
   background-color: black;
-  height: 100px;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
+  height: 245px;
+  -webkit-transform: translateY(-245px);
+          transform: translateY(-245px);
   -webkit-transition: -webkit-transform .4s .1s ease-in-out;
   transition: -webkit-transform .4s .1s ease-in-out;
   transition: transform .4s .1s ease-in-out;
   transition: transform .4s .1s ease-in-out, -webkit-transform .4s .1s ease-in-out;
-  z-index: -1;
   opacity: 0.8;
 }
 
@@ -175,8 +175,24 @@ header .row {
   list-style: none;
 }
 
+.nav-list li {
+  margin-bottom: 20px;
+}
+
 .nav-list a {
   color: white;
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown li {
+  margin-bottom: 8px;
+}
+
+#services:hover .dropdown {
+  display: block;
 }
 
 .hero-image {

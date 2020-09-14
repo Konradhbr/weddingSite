@@ -10,6 +10,7 @@ header {
     background-color: white;
     display: flex;
     height: -webkit-fill-available;
+    z-index: 2;
 }
  
 // -----hamburger menu------
@@ -87,10 +88,10 @@ header {
 
 .mobile-menu {
     background-color: black;
-    height: 100px;
-    transform: translateY(-100px);
+    height: 245px;
+    transform: translateY(-245px);
     transition: transform .4s .1s ease-in-out;
-    z-index: -1;
+    //z-index: -1;
     opacity: 0.8;
 
 }
@@ -101,11 +102,36 @@ header {
 
 .nav-list{
     list-style: none;
+    li {
+        margin-bottom: 20px;
+    }
 
-   a{
+    a{
        color: white;
-   }
+    }
 }
+
+.dropdown {
+    display: none;
+
+    li{
+        margin-bottom: 8px;
+
+    }
+
+}
+
+#services {
+
+    &:hover{
+        .dropdown {
+            display: block;
+        }
+    }
+}
+
+
+
 
 
 

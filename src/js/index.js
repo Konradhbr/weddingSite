@@ -26,9 +26,8 @@ $(document).ready(() => {
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-const handleClick = () => {
+const hamburgerHandleClick = () => {
   hamburger.classList.toggle('hamburger--active');
   mobileMenu.classList.toggle('mobile-menu--active');
 };
-
-hamburger.addEventListener('click', handleClick);
+hamburger.addEventListener('click', hamburgerHandleClick);

@@ -10,7 +10,8 @@
         "__request.scss",
         "__logo-slider.scss",
         "__footer.scss",
-        "__contact.scss"
+        "__contact.scss",
+        "__auto-do-slubu.scss"
     ],
     "names": [],
     "file": "style.css"

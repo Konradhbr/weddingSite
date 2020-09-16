@@ -163,7 +163,8 @@ header .row {
   transition: -webkit-transform .4s .1s ease-in-out;
   transition: transform .4s .1s ease-in-out;
   transition: transform .4s .1s ease-in-out, -webkit-transform .4s .1s ease-in-out;
-  opacity: 0.8;
+  z-index: 1;
+  opacity: 0.9;
 }
 
 .mobile-menu--active {
@@ -385,6 +386,10 @@ form button {
 
 form #message {
   height: 200px;
+}
+
+.slider {
+  margin-top: 100px;
 }
 
 .slick-slide {
@@ -649,5 +654,26 @@ footer .col-12 {
   width: 140px;
   background-color: #939984;
   color: white;
+}
+
+.photo-gallery {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.photo-gallery .car-text {
+  text-align: center;
+  margin-bottom: 50px;
+  z-index: -1;
+}
+
+.photo-gallery .car-text h2, .photo-gallery .car-text h4 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  word-spacing: 1.5px;
+}
+
+.photo-gallery img {
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */

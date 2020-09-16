@@ -661,13 +661,13 @@ footer .col-12 {
   margin-bottom: 50px;
 }
 
-.photo-gallery .car-text {
+.photo-gallery .gallery-text {
   text-align: center;
   margin-bottom: 50px;
   z-index: -1;
 }
 
-.photo-gallery .car-text h2, .photo-gallery .car-text h4 {
+.photo-gallery .gallery-text h2, .photo-gallery .gallery-text h4 {
   margin-bottom: 10px;
   text-transform: uppercase;
   word-spacing: 1.5px;

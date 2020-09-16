@@ -11,10 +11,7 @@
         "__logo-slider.scss",
         "__footer.scss",
         "__contact.scss",
-        "__wedding-car.scss",
-        "__floristry.scss",
-        "__wedding-wall.scss",
-        "__love-sign.scss"
+        "__subpage.scss"
     ],
     "names": [],
     "file": "style.css"

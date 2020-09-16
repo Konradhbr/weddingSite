@@ -12,7 +12,9 @@
         "__footer.scss",
         "__contact.scss",
         "__wedding-car.scss",
-        "__floristry.scss"
+        "__floristry.scss",
+        "__wedding-wall.scss",
+        "__love-sign.scss"
     ],
     "names": [],
     "file": "style.css"

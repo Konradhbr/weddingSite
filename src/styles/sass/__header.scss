@@ -108,6 +108,8 @@ header {
 
     a{
        color: white;
+       text-transform: uppercase;
+       text-decoration: none;
     }
 }
 
@@ -119,15 +121,6 @@ header {
 
     }
 
-}
-
-#services {
-
-    &:hover{
-        .dropdown {
-            display: block;
-        }
-    }
 }
 
 

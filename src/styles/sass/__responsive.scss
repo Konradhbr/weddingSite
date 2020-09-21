@@ -1,0 +1,113 @@
+// ------------------  Responsive Media Quaries -------------------
+@media only screen and (max-width: 576px) {
+    .request-bg {
+        height: 300px;
+    }
+
+    .slider {
+        margin-top: 100px;
+    }
+    
+}
+@media only screen and (min-width: 768px) {
+    .logo {
+        position: relative;
+        top: -6px;
+
+        img {
+            max-width: 70%;
+        }
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+        top: 155px;
+        width: 75%;
+        display: flex;
+        height: 90px;
+        float: right;
+        z-index: 2;
+        background-color: transparent;
+    }
+
+    .nav-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        height: 90px;
+        align-items: center;
+
+        a {
+            color: black;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 90px;
+        width: 255px;
+        background-color: black;
+        opacity: 0.9;
+        list-style: none;
+        padding-left: 23px;
+
+        li {
+            margin-top: 10px;
+            margin-bottom: 30px;
+
+            a {
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+
+            }
+        }
+    }
+
+    .hero-image-text {
+        padding-top: 30vh;
+    }
+
+    .request {
+        .container-fluid {
+            width: 87%;
+        }
+    }
+
+    #req-name {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #req-email {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #info {
+        height: 250px;
+        display: flex;
+        align-items: center;
+        padding-left: 45px;
+    }
+
+    .request-title p {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container-fluid {
+        max-width: 1170px;
+    }
+}

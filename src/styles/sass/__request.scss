@@ -38,7 +38,7 @@
     position: relative;
     text-align: center;
     height: 200px;
-    
+
     h6 {
         padding-top: 42px;
         margin-bottom: 20px;
@@ -58,15 +58,15 @@
     }
 
     &:after {
-      position: absolute;
-      left: 0;
-      bottom: -24px;
-      right: 0;
-      height: 26px;
-      width: 287px;
-      background: url("/src/assets/arrow.png");
-      content: "";
-      margin: 0 auto;
+        position: absolute;
+        left: 0;
+        bottom: -24px;
+        right: 0;
+        height: 26px;
+        width: 287px;
+        background: url("/src/assets/arrow.png");
+        content: "";
+        margin: 0 auto;
     }
 }
 
@@ -75,7 +75,7 @@ form {
     .row {
         text-align: center;
         padding-top: 40px;
-        
+
 
         div {
             padding-top: 30px;
@@ -120,5 +120,3 @@ form {
         height: 135px;
     }
 }
-
-    

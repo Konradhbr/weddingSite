@@ -30,6 +30,7 @@ $(document).ready(() => {
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const navbar = document.querySelector('#services');
+const dropdown = document.querySelector('.dropdown');
 
 const hamburgerHandleClick = () => {
   hamburger.classList.toggle('hamburger--active');
@@ -37,7 +38,7 @@ const hamburgerHandleClick = () => {
 };
 
 const navbarHandleClick = () => {
-  document.querySelector('.dropdown').style.display = 'block';
+  dropdown.classList.toggle('dropdown--active');
 };
 
 hamburger.addEventListener('click', hamburgerHandleClick);
@@ -51,6 +52,6 @@ const form = document.forms['google-sheet'];
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then((response) => alert('Wiadomość została wysłana! Skontaktujemy się z Państwem najszybciej jak to możliwe :)'))
+    .then(() => alert('Wiadomość została wysłana! Skontaktujemy się z Państwem najszybciej jak to możliwe :)'))
     .catch((error) => console.error('Error!', error.message));
 });

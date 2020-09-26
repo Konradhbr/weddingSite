@@ -1,8 +1,6 @@
-"use strict";
-
 // logo slider -------------------------------------------
 // eslint-disable-next-line no-undef
-$(document).ready(function () {
+$(document).ready(() => {
   // eslint-disable-next-line no-undef
   $('.wedding-logo ').slick({
     slidesToShow: 3,
@@ -16,43 +14,42 @@ $(document).ready(function () {
     responsive: [{
       breakpoint: 2160,
       settings: {
-        slidesToShow: 3
-      }
+        slidesToShow: 3,
+      },
     }, {
       breakpoint: 520,
       settings: {
-        slidesToShow: 2
-      }
-    }]
+        slidesToShow: 2,
+      },
+    }],
   });
 }); // hamburger and dropdown click-------------------------------------------------
 
-var hamburger = document.querySelector('.hamburger');
-var mobileMenu = document.querySelector('.mobile-menu');
-var navbar = document.querySelector('#services');
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+const navbar = document.querySelector('#services');
+const dropdown = document.querySelector('.dropdown');
 
-var hamburgerHandleClick = function hamburgerHandleClick() {
+const hamburgerHandleClick = function hamburgerHandleClick() {
   hamburger.classList.toggle('hamburger--active');
   mobileMenu.classList.toggle('mobile-menu--active');
 };
 
-var navbarHandleClick = function navbarHandleClick() {
-  document.querySelector('.dropdown').style.display = 'block';
+const navbarHandleClick = function navbarHandleClick() {
+  dropdown.classList.toggle('dropdown--active');
 };
 
 hamburger.addEventListener('click', hamburgerHandleClick);
-navbar.addEventListener('click', navbarHandleClick); // contact form -------------------------------------------------------------
+navbar.addEventListener('click', navbarHandleClick); 
 
-var scriptURL = 'https://script.google.com/macros/s/AKfycbzGHRdv5kI7hdSaqhIRvKxYym-9aIhdObuugDlceWCkx4B8hRYz/exec';
-var form = document.forms['google-sheet'];
-form.addEventListener('submit', function (e) {
+// contact form -------------------------------------------------------------
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzGHRdv5kI7hdSaqhIRvKxYym-9aIhdObuugDlceWCkx4B8hRYz/exec';
+const form = document.forms['google-sheet'];
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   fetch(scriptURL, {
     method: 'POST',
-    body: new FormData(form)
-  }).then(function (response) {
-    return alert('Wiadomość została wysłana! Skontaktujemy się z Państwem najszybciej jak to możliwe :)');
-  })["catch"](function (error) {
-    return console.error('Error!', error.message);
-  });
+    body: new FormData(form),
+  }).then(() => alert('Wiadomość została wysłana! Skontaktujemy się z Państwem najszybciej jak to możliwe :)')).catch((error) => console.error('Error!', error.message));
 });

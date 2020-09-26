@@ -1,0 +1,20 @@
+.photo-gallery {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.photo-gallery .gallery-text {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 10%;
+  z-index: -1;
+  border: black 1px solid;
+}
+.photo-gallery .gallery-text h2,
+.photo-gallery .gallery-text h4 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  word-spacing: 1.5px;
+}
+.photo-gallery img {
+  padding: 20px;
+}

@@ -4,11 +4,16 @@
         height: 300px;
     }
 
+    .request {
+        height: 900px;
+    }
+
     .slider {
         margin-top: 100px;
     }
-    
+
 }
+
 @media only screen and (min-width: 768px) {
     .logo {
         position: relative;
@@ -88,6 +93,7 @@
         display: flex;
         justify-content: flex-end;
     }
+
     #req-email {
         display: flex;
         justify-content: flex-start;

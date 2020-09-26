@@ -43,3 +43,14 @@ const navbarHandleClick = () => {
 hamburger.addEventListener('click', hamburgerHandleClick);
 navbar.addEventListener('click', navbarHandleClick);
 
+// contact form -------------------------------------------------------------
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzGHRdv5kI7hdSaqhIRvKxYym-9aIhdObuugDlceWCkx4B8hRYz/exec';
+const form = document.forms['google-sheet'];
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then((response) => alert('Wiadomość została wysłana! Skontaktujemy się z Państwem najszybciej jak to możliwe :)'))
+    .catch((error) => console.error('Error!', error.message));
+});

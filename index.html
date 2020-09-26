@@ -11,8 +11,7 @@
     
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-
-
+    
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
@@ -116,8 +115,8 @@
     </section>
     <!-- services section end -->
 
-    <!-- request section begin -->
-    <section class="request">
+    <!--request section begin -->
+     <section class="request">
         <div class="request-bg"></div>
         <div class="container-fluid">
             <div class="row">
@@ -127,36 +126,36 @@
                             <h6>Bądźmy w kontakcie</h6>
                             <h2>Napisz do nas</h2>
                             <p>Jeśli masz jakieś pytania lub chcesz zarezerwować termin uzupełnij formularz kontaktowy.</p>
-                        </div>
-                        <form action="">
+                        </div> 
+                        <form method="post" autocomplete="off" name="google-sheet">
                             <div class="row">
                                 <div id="req-name" class="col-sm-6">
-                                    <input type="text" placeholder="Imię i nazwisko">
+                                    <input type="text" name="Name" placeholder="Imię i nazwisko">
                                 </div>
                                 <div id="req-email" class="col-sm-6">
-                                    <input type="text" placeholder="Email">
+                                    <input type="text" name="Email" placeholder="Email">
                                 </div>
-                                <div class="col-12">
-                                    <select>
-                                        <option value="car">Auto do ślubu</option>
-                                        <option value="florist">Florystyka ślubna</option>
-                                        <option value="wall">Ścianka kwiatowa</option>
-                                        <option value="sign">Napis LOVE</option>
+                                <div id="req-service" class="col-12">
+                                    <select name="Service">
+                                        <option value="Auto do ślubu">Auto do ślubu</option>
+                                        <option value="Florystyka ślubna">Florystyka ślubna</option>
+                                        <option value="Ścianka kwiatowa">Ścianka kwiatowa</option>
+                                        <option value="Napis LOVE">Napis LOVE</option>
                                     </select>
                                 </div>
                                 <div id="message" class="col-12">
-                                    <textarea type="text" placeholder="Wiadomość"></textarea>
+                                    <textarea type="text" name="Message" placeholder="Wiadomość"></textarea>
                                 </div>
-                                <div class="col-12">
-                                    <button type="submit" class="site-btn">Wyślij</button>
+                                <div class="col-12" name="submit">
+                                    <button type="submit" name="submit" class="site-btn">Wyślij</button>
                                 </div>
                             </div>
                         </form>
-                    </div>
+                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <!-- request section end -->
 
     <!-- logo slider section begin  -->
@@ -210,7 +209,7 @@
         </div>
     </footer>
     <!-- footer section end -->
-
+    
     <!-- scripts -->
     <script src="/src/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>    

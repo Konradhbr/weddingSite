@@ -113,17 +113,19 @@
                 <div class="col-lg-8 col-md-8">
                     <div class="contact-form">
                         <h2>Napisz do nas</h2>
-                        <form action="#">
+                        <form method="post" autocomplete="off" name="google-sheet">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" placeholder="Imię i Nazwisko">
+                                    <input type="text"  name="Name" placeholder="Imię i Nazwisko">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" placeholder="Email">
+                                    <input type="text" name="Email" placeholder="Email">
                                 </div>
                             </div>
-                            <textarea placeholder="Wiadomość"></textarea>
-                            <button type="submit" class="site-btn">Wyślij</button>
+                            <textarea type="text" name="Message" placeholder="Wiadomość"></textarea>
+                            <div class="col-12" name="submit">
+                                <button type="submit" name="submit" class="site-btn">Wyślij</button>
+                            </div>
                         </form>
                     </div>
                 </div>
